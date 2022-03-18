@@ -1,0 +1,122 @@
+@use 'vars';
+
+.form-group {
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    width: 100%;
+    min-height: 500px; 
+    justify-content: space-around;
+    align-items: center;
+
+    & .respuestas {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        min-height: 100px;
+        align-items: start;
+
+        .ubicacion {
+            display: flex;
+            align-items: center;
+            height: auto;
+
+            & p {
+                font-size: 1.2rem;
+                width: 20%;
+                text-align: start;
+            }
+        
+            & .img-ubicacion {
+                width: 30%;
+                margin-left: 30px;
+                margin-bottom: 15px;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    & .pregunta {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+
+    & .seleccion {
+        font-size: 1.2rem;
+    }
+
+    .opcional {
+        align-items: center;
+    
+        & input {
+            width: 50%;
+            padding: 7px 0px;
+            border-radius: 20px;
+            background-color: var(--color-oscuro);
+            border: 1px solid;
+            color: var(--color-claro);
+            transition: 1s all ease;
+            margin-top: 20px;
+            
+            &:focus {
+                padding: 10px 5px;
+                outline: none;
+                background-color: var(--color-secundario);
+                color: var(--color-oscuro);
+                text-align: center;
+
+                &::placeholder {
+                    color: var(--color-oscuro);
+                }
+            }
+            &::placeholder {
+                text-align: center;
+                color: var(--color-secundario);
+            }
+        }
+    }
+}
+
+
+#drop-area {
+    border: 2px dashed var(--color-secundario);
+    border-radius: 20px;
+    width: 480px;
+    font-family: var(--fuente-secundaria);
+    margin: 50px auto;
+
+    & .hightlight {
+        border-color: #1eff00;
+    }
+
+    & p {
+        margin-top: 0;
+        font-size: 1.7rem;
+    }
+
+    & label {
+        font-size: 2rem;
+    }
+
+    &.button {
+        display: inline-block;
+        padding: 10px;
+        background-color: var(--color-oscuro);
+        cursor: pointer;
+        color: var(--color-secundario);
+        border-radius: 8px;
+        border: 1px solid transparent;
+
+        &:hover {
+            background-color: rgba(var(--color-oscuro), 0,5);
+        }
+    }
+
+    & #image-front-house {
+        display: none;
+    }
+}
+
+
