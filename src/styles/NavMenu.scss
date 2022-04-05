@@ -2,7 +2,7 @@
 
 .nav{
     height: 100px;
-    background-color: rgb(40,40,60);
+    background-color: var(--color-oscuro);
     display: flex;
     align-items: center;
     padding: 5px 50px;
@@ -25,5 +25,5 @@
 .link {
     text-decoration: none;
     font-size: 1.6rem;
-    color: var(--color-primario);
+    color: var(--color-claro);
 }

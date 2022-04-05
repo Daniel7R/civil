@@ -18,40 +18,44 @@
 }
 
 .label {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-family: var(--fuente-secundaria);
 }
 
 .btn-ubicacion {
-    width: 50%;
-    padding: 5px 10px;
+    width: 73%;
+    padding: 7px 10px;
     border-radius: 20px;
-    background-color: var(--color-primario);
-    color: var(--color-oscuro);
+    background-color: var(--color-oscuro);
+    color: var(--color-input);
     margin-bottom: 15px;
     transition: 1s all ease;
     border: 1px solid transparent;
+    font-family: var(--fuente-secundaria);
+    
     &:hover {
-        background-color: var(--color-oscuro);
-        color: var(--color-primario);
-        width: 51%;
+        background-color: var(--color-secundario);
+        color: var(--color-oscuro);
+        padding: 7px 25px;
         cursor: pointer;
     }
 }
 
 .form-control {
+    font-family: var(--fuente-secundaria);
     padding: 10px 0;
-    border-radius: 20px;
+    border-radius: 10px;
     width: 70%;
     text-align: center;
     border: 1px solid var(--color-secundario);
     background-color: var(--color-oscuro);
-    margin: 15px 0;
+    margin: 5px 0;
     transition: 1s all ease;
-    color: var(--color-claro);
+    color: var(--color-primario);
 
     &:focus {
         outline: none;
-        padding: 12px 0;
+        padding: 10px 10px;
         background-color: var(--color-secundario);
         border-color: var(--color-oscuro);
         color: var(--color-oscuro);
@@ -62,7 +66,7 @@
     }
 
     &::placeholder {
-        color: var(--color-primario);
+        color: var(--color-input);
     }
 
     &:invalid {
@@ -70,24 +74,42 @@
     }
 
     &.btn {
+        margin-top: 30px;
         width: 80%;
-        background-color: var(--color-secundario);
+        border-radius: 20px;
+        background-color: var(--color-primario);
         border: 1px solid transparent;
         color: var(--color-oscuro);
+        font-weight: 700;
+        font-family: var(--fuente-primaria);
 
         &:hover {
             width: 82%;
             background-color: var(--color-oscuro);
-            color: var(--color-secundario);
-            padding: 12px 0;
+            color: var(--color-claro);
+            padding-left:  5px;
+            padding-right: 5px;
             cursor: pointer;
         }
     }
 
     &-label {
-        font-size: 1rem;
+        font-size: 1.1rem;
+        font-family: var(--fuente-secundaria);
+        color: var(--color-oscuro);
         display: flex;
         align-items: center;
+    }
+    &.select {
+        color: var(--color-input);
+    
+        &:focus {
+            color: var(--color-oscuro);
+        }
+    
+        &::selection {
+            color: var(--color-oscuro);
+        }
     }
 }
 
@@ -95,17 +117,7 @@
     margin-right: 5px;
 }
 
-select {
-    color: var(--color-claro);
 
-    &:focus {
-        color: var(--color-oscuro);
-    }
-
-    &::selection {
-        color: var(--color-oscuro);
-    }
-}
 
 div {
     width: 100%;
