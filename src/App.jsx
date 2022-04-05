@@ -6,6 +6,8 @@ import { Layout } from './containers/Layout.jsx'
 import { Home } from './containers/Home.jsx'
 import { EncuestadoInformation } from './components/EncuestadoInformation.jsx'
 import {Formulario} from './containers/Formulario.jsx'
+import { ImageTest } from './containers/ImageTest.jsx'
+
 export const App = () => {
   return (
     <Router>
@@ -15,6 +17,7 @@ export const App = () => {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/personal-information" element={<EncuestadoInformation />} />
           <Route exact path="/encuesta" element={<Formulario />} />
+          <Route exact path='/test' element={<ImageTest />} />
         </Routes>
       </Layout>
     </Router>
