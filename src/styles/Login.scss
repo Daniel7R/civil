@@ -1,0 +1,67 @@
+@use 'vars';
+
+.form-groupl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    max-width: 450px;
+    font-family: var(--fuente-primaria);
+    min-height: 300px;
+    height: 100%;
+
+    .form-control {
+        width: 60%;
+        text-align: center;
+        transition: 1s all ease;
+        background-color: var(--color-oscuro);
+        border: 1px solid var(--color-secundario);
+        color: var(--color-primario);
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:focus {
+            outline: none;
+            width: 65%;
+            background-color: var(--color-secundario);
+            color: var(--color-oscuro);
+        }
+        
+        &::placeholder {
+            text-align: center;
+            color: var(--color-input);
+        }
+    }
+
+    .btn {
+        width: 70%;
+        margin-top: 30px;
+        border-radius: 30px;
+        background-color: var(--color-primario);
+        border: 1px solid transparent;
+        color: var(--color-oscuro);
+        font-family: var(--fuente-secundaria);
+        font-size: 1.5rem;
+        transition: 1s all ease;
+        padding: 8px 0;
+        
+        &:hover {
+            width: 73%;
+            background-color: var(--color-oscuro);
+            color: var(--color-claro);
+            padding-left: 5px;
+            padding-right: 5px;
+            cursor: pointer;
+        }
+    }
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--color-oscuro);
+    margin-bottom: 30px;
+    font-family: var(--fuente-secundaria);
+}
