@@ -951,7 +951,7 @@ export const Formulario = () => {
             <input type="radio" name='q-17' value={'Guadua'} onClick={e => setMaterialConstruccion(e.target.value)} /><p>Guadua</p>
           </label>
           <label className='seleccion'>
-            <input type="radio" name='q-17' /><p>Otro: &nbsp;</p> 
+            <input type="radio" onClick={e => setMaterialConstruccion('') } name='q-17' /><p>Otro: &nbsp;</p> 
             <input type="text" className='otro' onChange={e => setMaterialConstruccion(e.target.value) } value={materialConstruccion} placeholder='Digite' />
           </label>
         </div>
